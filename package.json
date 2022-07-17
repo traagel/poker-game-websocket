@@ -4,9 +4,22 @@
   "description": "poker game with websockets",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "mart traagel",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.2.1",
+    "fastify-favicon": "^4.0.0",
+    "prettier": "^2.7.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 4
+  },
+  "devDependencies": {
+    "@fastify/static": "^6.4.0"
+  }
 }

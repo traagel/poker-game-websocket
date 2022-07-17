@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-style: solid;
+}
+
+.lobby {
+    display: grid;
+    width: 400px;
+    height: 650px;
+    padding: 0;
+    border-radius: 35px;
+    background-color: #2B2E35;
+    margin: 25px auto auto;
+}
+
+.title {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    padding-top: 25px;
+    color: #eee;
+    height: 100px;
+    background-color: #1C1F24;
+}
+
+.game-list {
+    color: #eee;
+}
+
+button {
+    background-color: #333;
+    color: #eee;
+    border: none;
+    padding: 10px;
+}
+
+button:hover {
+    color: orange;
+}
+
+body {
+    background-image: url("../img/backgrounds/5120653.jpg");
+    background-color: #223d34;
+    font-family: 'Nunito Sans', sans-serif;
+    justify-content: center;
+    user-select: none;
+    text-align: center;
+}
+
+li {
+    padding-left: 15px;
+    list-style: none;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#button-join-game-1 {
+    float: right;
+    margin-top: -15px;
+    padding-top: 15px;
+    padding-bottom: 22px;
+}
+
+li:hover {
+    background-color: #444;
+}
+
+img {
+    pointer-events: none;
+}

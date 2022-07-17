@@ -1,0 +1,81 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0 0;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "player-list dealer-cards dealer-cards"
+    "player-list player-cards player-cards"
+    ". . .";
+    background-color: #2B2E35;
+    border-radius: 35px;
+    margin: 45px;
+}
+
+.player-list {
+    grid-area: player-list;
+}
+
+.dealer-cards {
+    grid-area: dealer-cards;
+}
+
+.player-cards {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 0.8fr;
+    grid-template-rows: 1.1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "render-player-cards render-player-cards render-player-cards"
+    "render-player-cards render-player-cards render-player-cards"
+    ". player-buttons .";
+    grid-area: player-cards;
+}
+
+.render-player-cards {
+    grid-area: render-player-cards;
+}
+
+.player-buttons {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr 1.1fr;
+    grid-template-rows: 1.1fr 0.9fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+". . . .";
+    grid-area: player-buttons;
+
+
+}
+
+body {
+    background-image: url("../img/backgrounds/5120653.jpg");
+    background-color: #223d34;
+    font-family: 'Nunito Sans', sans-serif;
+    justify-content: center;
+    user-select: none;
+    text-align: center;
+    border-radius: 35px;
+    color: #bbb;
+}
+
+.dealer-cards li, .player-cards li, .player-buttons li {
+    display: inline;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    pointer-events: none;
+}
